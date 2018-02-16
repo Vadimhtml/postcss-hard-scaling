@@ -36,3 +36,18 @@ We get:
     line-height: 29px;
 }
 ```
+Units:
+
+`ptr` — Will be scaled and rounded to the nearest integer.   
+
+`ptc` — Largest integer less than or equal to a scaled.
+
+`ptf` — Smallest integer greater than or equal to a scaled. 
+
+Arguments:
+
+`layout` — Source size: integer 
+
+`interface` — Destination size: integer
+
+`log` — Console logging: boolean
