@@ -1,6 +1,6 @@
 {
   "name": "postcss-hard-scaling",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Hard scaling plugin for PostCSS",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Vadimhtml/postcss-hard-scaling/issues"
   },
-  "homepage": "https://github.com/Vadimhtml/postcss-hard-scaling#readme"
+  "homepage": "https://github.com/Vadimhtml/postcss-hard-scaling#readme",
+  "dependencies": {
+    "postcss": "^6.0.18"
+  }
 }
