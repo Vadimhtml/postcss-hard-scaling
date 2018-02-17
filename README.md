@@ -25,6 +25,7 @@ gulp.task('scale', function () {
                 log: true
             })
         ]))
+        .pipe(gulp.dest('./build'));
 });
 ```
 
