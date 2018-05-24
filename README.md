@@ -8,6 +8,7 @@ So, we have CSS like this:
     width: 22ptr;
     height: 22ptc;
     line-height: 22ptf;
+    border-radius: 10pt;
 }
 ```
 
@@ -35,6 +36,7 @@ We get:
     width: 29px;
     height: 30px;
     line-height: 29px;
+    border-radius: 13.3333px
 }
 ```
 Units:
@@ -44,6 +46,8 @@ Units:
 `ptc` — Largest integer less than or equal to a scaled.
 
 `ptf` — Smallest integer greater than or equal to a scaled. 
+
+`pt` — Just multiplication. 
 
 Arguments:
 

@@ -24,6 +24,12 @@ module.exports = postcss.plugin('postcss-hard-scaling', function (opts) {
                 case 'f':
                     rounding = Math.floor;
                     break;
+                default:
+                    rounding = (e) => {
+                        return e;
+                    };
+                    break;
+
             }
 
             result = `${rounding(parseInt(amount) * multiplier).toString()}px`;
@@ -36,7 +42,7 @@ module.exports = postcss.plugin('postcss-hard-scaling', function (opts) {
         }
 
         css.walkDecls(declaration => {
-            declaration.value = declaration.value.replace(/\b(\d+)pt(r|c|f)\b/g, replacer);
+            declaration.value = declaration.value.replace(/\b(\d+)pt(r|c|f|)\b/g, replacer);
         });
     };
 });
