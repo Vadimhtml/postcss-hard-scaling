@@ -42,7 +42,7 @@ module.exports = postcss.plugin('postcss-hard-scaling', function (opts) {
         }
 
         css.walkDecls(declaration => {
-            declaration.value = declaration.value.replace(/\b(\d+)pt(r|c|f|)\b/g, replacer);
+            declaration.value = declaration.value.replace(/\b(\d+|\d+\.\d+)pt(r|c|f|)\b/g, replacer);
         });
     };
 });
